@@ -2,7 +2,7 @@
   "animateLoading": true,
   "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 70,
+  "bottomRow": 72,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -39,8 +39,8 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "originalBottomRow": 70,
-  "originalTopRow": 66,
+  "originalBottomRow": 72,
+  "originalTopRow": 68,
   "overflow": "NONE",
   "parentColumnSpace": 15.21875,
   "parentId": "0",
@@ -52,7 +52,7 @@
   "text": "No bets found",
   "textAlign": "CENTER",
   "textColor": "#f4f4f5",
-  "topRow": 66,
+  "topRow": 68,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
