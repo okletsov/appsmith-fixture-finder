@@ -32,11 +32,23 @@
   "dynamicPropertyPathList": [
     {
       "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -50,6 +62,7 @@
       "isVisible": true,
       "label": "Future - {{future_bets.data.length}}",
       "menuItems": {},
+      "onClick": "{{storeValue('parentButton', 'future_bets');\nshowModal(Modal_bets.name);}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -63,6 +76,7 @@
       "isVisible": true,
       "label": "Past - {{summary.data[0].past}}",
       "menuItems": {},
+      "onClick": "{{storeValue('parentButton', 'past_bets');\nshowModal(Modal_bets.name);}}",
       "placement": "CENTER",
       "widgetId": ""
     },

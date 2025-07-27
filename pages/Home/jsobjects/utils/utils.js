@@ -33,5 +33,14 @@ export default {
 		Input_away_form_below.setValue("");
 		Input_min_h2h_away_odds.setValue("");
 		Select_outcome.setSelectedOption("home");
+	},
+	getTitleForBetsModal() {
+		const buttonClicked = appsmith.store.parentButton;
+		
+		if(buttonClicked === 'future_bets') {
+			return 'Future bets - ' + future_bets.data.length;
+		} else if(buttonClicked === 'past_bets') {
+			return 'Past bets - ' + summary.data[0].past;
+		}
 	}
 }
