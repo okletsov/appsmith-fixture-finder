@@ -18,6 +18,9 @@ export default {
 			"summary": summary.data
 		}
 	},
+	storeExpectedOutcome() {
+		storeValue('expectedOutcome', 'home');
+	},
 	clearInputs() {
 		Input_home_clicks_count.setValue("");
 		Input_home_clicks_pct.setValue("");
@@ -41,6 +44,16 @@ export default {
 			return 'Future bets - ' + future_bets.data.length;
 		} else if(buttonClicked === 'past_bets') {
 			return 'Past bets - ' + summary.data[0].past;
+		}
+	},
+	
+	getPredictionsForModal() {
+		const buttonClicked = appsmith.store.parentButton;
+		
+		if(buttonClicked === 'past_bets') {
+			return past_bets.data;
+		} else if(buttonClicked === 'future_bets') {
+			return future_bets.data;
 		}
 	}
 }

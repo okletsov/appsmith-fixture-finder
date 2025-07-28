@@ -1,22 +1,5 @@
-SELECT 
-	*
-	, round(t1.units / t1.past * 100, 2) as ROI
-from (
 	SELECT 
-		count(e.id) as past
-		, sum(case when e.`result` = '{{Select_outcome.selectedOptionValue}}' then 1 else 0 end) as won
-		, sum(case when e.`result` <> '{{Select_outcome.selectedOptionValue}}' then 1 else 0 end) as lost
-		, sum(
-				case 
-						when e.`result` = '{{Select_outcome.selectedOptionValue}}' then
-								case '{{Select_outcome.selectedOptionValue}}'
-										when 'HOME' then (e.odds_home - 1)
-										when 'DRAW' then (e.odds_draw - 1)
-										when 'AWAY' then (e.odds_away - 1)
-										else 0
-								end
-						else -1
-				end) as units
+		*
 	from event e 
 	where 1=1
 		and e.`result` in ('home', 'draw', 'away')
@@ -33,5 +16,4 @@ from (
 		and ({{Input_away_form_above.text === null}} OR e.away_form >= '{{Input_away_form_above.text}}')
 		and ({{Input_away_form_below.text === null}} OR e.away_form < '{{Input_away_form_below.text}}')
 		and ({{Input_max_h2h_away_odds.text === null}} OR e.h2h_away_odds <= '{{Input_max_h2h_away_odds.text}}')
-	) t1
-;
+	order by e.date_scheduled desc;

@@ -49,7 +49,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 35,
   "needsErrorInfo": false,
-  "onOptionChange": "{{summary.run();\nrunning_sum.run()}}",
+  "onOptionChange": "{{summary.run();\nrunning_sum.run();\nstoreValue('expectedOutcome', Select_outcome.selectedOptionValue);}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 6.84375,

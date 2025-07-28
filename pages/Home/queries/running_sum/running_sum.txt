@@ -13,7 +13,7 @@ SELECT
 			end) OVER (ORDER BY e.date_scheduled asc, e.date_updated asc) AS running_sum
 from event e 
 where 1=1 
-	and e.`result` is not null
+	and e.`result` in ('home', 'draw', 'away')
 	and ({{Input_home_clicks_count.text === null}} OR e.home_clicks_count >= '{{Input_home_clicks_count.text}}')
 	and ({{Input_home_clicks_pct.text === null}} OR e.home_clicks_pct >= '{{Input_home_clicks_pct.text}}')
 	and ({{Input_dropping_odds_count.text === null}} OR e.dropping_odds_count >= '{{Input_dropping_odds_count.text}}')
