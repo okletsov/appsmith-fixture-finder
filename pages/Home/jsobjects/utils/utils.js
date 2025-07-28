@@ -31,7 +31,7 @@ export default {
 		Input_home_form_below.setValue("");
 		Input_away_form_above.setValue("");
 		Input_away_form_below.setValue("");
-		Input_min_h2h_away_odds.setValue("");
+		Input_max_h2h_away_odds.setValue("");
 		Select_outcome.setSelectedOption("home");
 	},
 	getTitleForBetsModal() {

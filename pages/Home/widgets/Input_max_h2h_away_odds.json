@@ -38,7 +38,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "mpzdgi89nx",
-  "label": "Min h2h away odds",
+  "label": "Max h2h away odds",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
@@ -72,5 +72,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "cmyvfewtdc",
-  "widgetName": "Input_min_h2h_away_odds"
+  "widgetName": "Input_max_h2h_away_odds"
 }

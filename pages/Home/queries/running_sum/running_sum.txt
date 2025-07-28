@@ -26,5 +26,5 @@ where 1=1
 	and ({{Input_home_form_below.text === null}} OR e.home_form < '{{Input_home_form_below.text}}')
 	and ({{Input_away_form_above.text === null}} OR e.away_form >= '{{Input_away_form_above.text}}')
 	and ({{Input_away_form_below.text === null}} OR e.away_form < '{{Input_away_form_below.text}}')
-	and ({{Input_min_h2h_away_odds.text === null}} OR e.h2h_away_odds <= '{{Input_min_h2h_away_odds.text}}')
+	and ({{Input_max_h2h_away_odds.text === null}} OR e.h2h_away_odds <= '{{Input_max_h2h_away_odds.text}}')
 ;
