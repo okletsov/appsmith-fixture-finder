@@ -46,7 +46,7 @@
   "shouldTruncate": false,
   "text": "{{utils.getTitleForBetsModal()}}",
   "textAlign": "CENTER",
-  "textColor": "#ffffff",
+  "textColor": "#f4f4f5",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
