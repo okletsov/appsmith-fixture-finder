@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#858282",
+  "borderColor": "#ffffff",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "2",
+  "bottomRow": 7,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.75rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1zjo8x9lbz",
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.0546875,
+  "parentId": "zlhvtigf07",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldTruncate": false,
+  "text": "<span style=\"color:{{'#ffffff'}};\">{{utils.formatDateTimeWithYear(currentItem.date_scheduled)}}</span>\n\n<span style=\"color:{{appsmith.store.expectedOutcome === 'home' ? '#ffffff' : '#71717a'}};\">{{currentItem.odds_home}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'draw' ? '#ffffff' : '#71717a'}};\">{{currentItem.odds_draw}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'away' ? '#ffffff' : '#71717a'}};\">{{currentItem.odds_away}}</span>",
+  "textAlign": "CENTER",
+  "textColor": "#71717a",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "2dkvydjtyu",
+  "widgetName": "Text_odds_and_date"
+}

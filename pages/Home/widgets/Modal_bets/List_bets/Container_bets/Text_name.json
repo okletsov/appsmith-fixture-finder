@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -17,9 +17,14 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -39,9 +44,9 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 43,
   "shouldTruncate": false,
-  "text": "{{currentItem.name}}",
+  "text": "<span style=\"font-size:10px; color:{{'#71717a'}};\">{{currentItem.country}} -> {{currentItem.league}}  (TC: {{currentItem.league_teams_count}}; GP: {{currentItem.league_games_played}})</span>\n\n{{currentItem.name}}",
   "textAlign": "LEFT",
   "textColor": "#ffffff",
   "topRow": 0,
@@ -49,5 +54,5 @@
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "w2r7wut28x",
-  "widgetName": "Text1"
+  "widgetName": "Text_name"
 }

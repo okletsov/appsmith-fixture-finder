@@ -46,7 +46,6 @@ export default {
 			return 'Past bets - ' + summary.data[0].past;
 		}
 	},
-	
 	getPredictionsForModal() {
 		const buttonClicked = appsmith.store.parentButton;
 		
@@ -55,5 +54,15 @@ export default {
 		} else if(buttonClicked === 'future_bets') {
 			return future_bets.data;
 		}
+	},
+	formatDateTimeWithYear(dateTime) {
+		if(dateTime === null) {return null;}
+		 
+      const date = new Date(dateTime);
+      
+      const options = { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false };
+      const formattedDateTime = date.toLocaleString('en-US', options).replace(',', ',');
+      
+      return formattedDateTime;	
 	}
 }
