@@ -18,7 +18,8 @@ export default {
 			"summary": summary.data
 		}
 	},
-	storeExpectedOutcome() {
+	setDefaultOutcome() {
+		Select_outcome.setSelectedOption("home");
 		storeValue('expectedOutcome', 'home');
 	},
 	clearInputs() {
@@ -35,7 +36,24 @@ export default {
 		Input_away_form_above.setValue("");
 		Input_away_form_below.setValue("");
 		Input_max_h2h_away_odds.setValue("");
-		Select_outcome.setSelectedOption("home");
+	},
+	
+	setInputsByStrategy() {
+		if(appsmith.store.strategy === 1) {
+			Select_outcome.setSelectedOption('away');
+			storeValue('expectedOutcome', 'away');
+			Input_away_form_above.setValue(300);
+		} else if (appsmith.store.strategy === 2) {
+			Select_outcome.setSelectedOption('home');
+			storeValue('expectedOutcome', 'home');
+			Input_home_form_above.setValue(300);
+			Input_away_form_below.setValue(199);
+		} else if (appsmith.store.strategy === 3) {
+			Select_outcome.setSelectedOption('home');
+			storeValue('expectedOutcome', 'home');
+			Input_home_clicks_count.setValue(30);
+			Input_home_clicks_pct.setValue(80);
+		}
 	},
 	getTitleForBetsModal() {
 		const buttonClicked = appsmith.store.parentButton;

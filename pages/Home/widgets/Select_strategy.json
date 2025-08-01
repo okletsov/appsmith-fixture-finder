@@ -1,0 +1,69 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 57,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ar286zlx3k",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Strategy",
+  "labelTextColor": "#ffffff",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\nstoreValue('strategy', Select_strategy.selectedOptionValue);\nutils.clearInputs();\nutils.setInputsByStrategy();\nsummary.run();\nrunning_sum.run();}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Strategy 1\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"Strategy 2\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"Strategy 3\",\n    \"code\": 3\n  }\n]",
+  "topRow": 50,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "j0wpjmxiof",
+  "widgetName": "Select_strategy"
+}

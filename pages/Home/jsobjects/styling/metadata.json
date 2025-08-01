@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "6866ba002612f654e81bea96_eaa31922-3051-4008-a6b7-64e3f7419a6c",
+  "id": "Home_styling",
+  "unpublishedCollection": {
+    "name": "styling",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "primaryColor",
+        "value": "'#f4f4f5'"
+      },
+      {
+        "name": "secondaryColor",
+        "value": "'#71717a'"
+      }
+    ]
+  }
+}
