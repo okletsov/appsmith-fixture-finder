@@ -46,7 +46,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 36,
   "shouldTruncate": false,
-  "text": "HF:       {{currentItem.home_form}} \nAF:       {{currentItem.away_form}}\nHCC:    {{currentItem.home_clicks_count}} ({{currentItem.home_clicks_pct}}%)\nDO:      {{currentItem.dropping_odds_count}} ({{currentItem.dropping_odds_pct}}%)\nHLP:    {{currentItem.home_league_pos}} ({{currentItem.home_league_pos_pct}}%)\nALP:    {{currentItem.away_league_pos}} ({{currentItem.away_league_pos_pct}}%)\nH2H:   {{currentItem.h2h_away_odds}}",
+  "text": "HF:       {{currentItem.home_form}} \nAF:       {{currentItem.away_form}}\nHCC:    {{currentItem.home_clicks_count}} ({{currentItem.home_clicks_pct}}%)\nDO:      {{currentItem.dropping_odds_count}} ({{currentItem.dropping_odds_pct}}%)\nHLP:    {{currentItem.home_league_pos}} of {{currentItem.league_teams_count}} ({{currentItem.home_league_pos_pct}}%)\nALP:    {{currentItem.away_league_pos}} of {{currentItem.league_teams_count}} ({{currentItem.away_league_pos_pct}}%)\nH2H:   {{currentItem.h2h_away_odds}}",
   "textAlign": "LEFT",
   "textColor": "#f4f4f5",
   "topRow": 7,
