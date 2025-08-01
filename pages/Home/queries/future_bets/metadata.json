@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select * from event e2 where e2.date_scheduled > now();",
+      "body": "select * from event e where e.date_scheduled > now() order by e.date_scheduled asc;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
