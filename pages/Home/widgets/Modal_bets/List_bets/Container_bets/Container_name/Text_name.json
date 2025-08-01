@@ -1,5 +1,6 @@
 {
   "animateLoading": true,
+  "backgroundColor": "",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "dynamicBindingPathList": [
@@ -29,7 +30,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "85apo5vllj",
-  "leftColumn": 2,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -40,7 +41,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 6.0546875,
-  "parentId": "zlhvtigf07",
+  "parentId": "a50iw2y5jv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",

@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#858282",
+  "backgroundColor": "",
   "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "2",
-  "bottomRow": 17,
+  "borderWidth": "0",
+  "bottomRow": 20,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -42,7 +42,7 @@
   "mobileTopRow": 11,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 6.0546875,
+  "parentColumnSpace": 3.515625,
   "parentId": "zlhvtigf07",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
@@ -52,10 +52,10 @@
   "text": "{{utils.formatDateTimeWithYear(currentItem.date_scheduled)}}\n\n<span style=\"color:{{appsmith.store.expectedOutcome === 'home' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_home}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'draw' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_draw}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'away' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_away}}</span>\n\n{{currentItem.main_score === null ? '' : currentItem.main_score + ' ' + currentItem.detailed_score}}",
   "textAlign": "CENTER",
   "textColor": "#f4f4f5",
-  "topRow": 6,
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2dkvydjtyu",
+  "widgetId": "4pgn0k15xr",
   "widgetName": "Text_odds_and_date"
 }
