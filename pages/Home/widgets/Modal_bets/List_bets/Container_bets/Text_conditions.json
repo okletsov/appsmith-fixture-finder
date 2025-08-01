@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.75rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "kiwm3b1ve9",
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.0546875,
+  "parentId": "zlhvtigf07",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 36,
+  "shouldTruncate": false,
+  "text": "HF:       {{currentItem.home_form}} \nAF:       {{currentItem.away_form}}\nHCC:    {{currentItem.home_clicks_count}} ({{currentItem.home_clicks_pct}}%)\nDO:      {{currentItem.dropping_odds_count}} ({{currentItem.dropping_odds_pct}}%)\nHLP:    {{currentItem.home_league_pos}} ({{currentItem.home_league_pos_pct}}%)\nALP:    {{currentItem.away_league_pos}} ({{currentItem.away_league_pos_pct}}%)\nH2H:   {{currentItem.h2h_away_odds}}",
+  "textAlign": "LEFT",
+  "textColor": "#f4f4f5",
+  "topRow": 7,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "4wopauj69m",
+  "widgetName": "Text_conditions"
+}
