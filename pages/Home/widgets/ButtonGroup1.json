@@ -128,7 +128,7 @@
           "widgetId": ""
         }
       },
-      "onClick": "{{utils.clearInputs();\nSelect_strategy.setSelectedOption(\"\");\nstoreValue('strategy', \"\");\nutils.setDefaultOutcome();\nsummary.run();\nrunning_sum.run()}}",
+      "onClick": "{{utils.clearInputs();\nSelect_strategy.setSelectedOption(\"\");\nstoreValue('strategy', \"\");\nutils.setDefaultOutcome();\nfuture_bets.run();\nsummary.run();\nrunning_sum.run()}}",
       "placement": "CENTER",
       "widgetId": ""
     }
