@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6866ba002612f654e81bea96_afaf41ee-7deb-4eaf-9fd8-7789f8729a88",
-  "id": "Home_utils.setInputsByStrategy",
+  "gitSyncId": "6866ba002612f654e81bea96_1f37e83c-fdd8-4e98-a86e-2b8941499ac5",
+  "id": "Home_utils.runAllQueries",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "utils.setInputsByStrategy",
-    "name": "setInputsByStrategy",
+    "fullyQualifiedName": "utils.runAllQueries",
+    "name": "runAllQueries",
     "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

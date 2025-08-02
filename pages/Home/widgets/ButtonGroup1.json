@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 64,
+  "bottomRow": 19,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -128,7 +128,7 @@
           "widgetId": ""
         }
       },
-      "onClick": "{{utils.clearInputs();\nSelect_strategy.setSelectedOption(\"\");\nstoreValue('strategy', \"\");\nutils.setDefaultOutcome();\nfuture_bets.run();\nsummary.run();\nrunning_sum.run()}}",
+      "onClick": "{{utils.clearInputs();\nSelect_strategy.setSelectedOption(\"\");\nstoreValue('strategy', \"\");\nutils.setDefaultOutcome();\nutils.runAllQueries();}}",
       "placement": "CENTER",
       "widgetId": ""
     }
@@ -153,7 +153,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 59,
+  "topRow": 14,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "7pnt1agohe",

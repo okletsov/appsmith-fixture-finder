@@ -37,7 +37,11 @@ export default {
 		Input_away_form_below.setValue("");
 		Input_max_h2h_away_odds.setValue("");
 	},
-	
+	runAllQueries() {
+		future_bets.run();
+		summary.run();
+		running_sum.run();
+	},
 	setInputsByStrategy() {
 		if(appsmith.store.strategy === 1) {
 			Select_outcome.setSelectedOption('away');

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 57,
+  "bottomRow": 7,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -61,7 +61,7 @@
   "rightColumn": 30,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Strategy 1\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"Strategy 2\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"Strategy 3\",\n    \"code\": 3\n  }\n]",
-  "topRow": 50,
+  "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "j0wpjmxiof",
