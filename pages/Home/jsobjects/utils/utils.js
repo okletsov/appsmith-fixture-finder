@@ -1,4 +1,5 @@
 export default {
+	defaultSelectedItem: 1,
 	commaSeparate(passedArray) {
     if(passedArray.length === 0) {
 			return `''`;

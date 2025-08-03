@@ -59,6 +59,7 @@
     }
   ],
   "currentItemsView": "{{[]}}",
+  "defaultSelectedItem": "{{appsmith.store.parentButton === 'future_bets' ? future_bets.data[0].id : past_bets.data[0].id}}",
   "dynamicBindingPathList": [
     {
       "key": "currentItemsView"
@@ -83,6 +84,9 @@
     },
     {
       "key": "listData"
+    },
+    {
+      "key": "defaultSelectedItem"
     }
   ],
   "dynamicPropertyPathList": [
@@ -121,6 +125,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 4,
   "triggeredItemView": "{{{}}}",
