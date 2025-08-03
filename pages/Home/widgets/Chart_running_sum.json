@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowScroll": false,
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "1.5rem",
   "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
@@ -65,9 +65,6 @@
   "dynamicBindingPathList": [
     {
       "key": "customEChartConfig"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "accentColor"
