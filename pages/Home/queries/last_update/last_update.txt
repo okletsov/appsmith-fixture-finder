@@ -1,0 +1,1 @@
+SELECT e.date_updated from event e order by date_updated desc limit 1;

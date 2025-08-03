@@ -56,7 +56,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onSubmit": "{{future_bets.run();\nsummary.run();\nrunning_sum.run()}}",
+  "onSubmit": "{{utils.runAllQueries();}}",
   "onTextChanged": "{{summary.run();\nrunning_sum.run()}}",
   "parentColumnSpace": 15.21875,
   "parentId": "9ic2pksc53",

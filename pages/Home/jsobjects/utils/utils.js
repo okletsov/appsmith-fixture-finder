@@ -1,5 +1,4 @@
 export default {
-	defaultSelectedItem: 1,
 	commaSeparate(passedArray) {
     if(passedArray.length === 0) {
 			return `''`;
@@ -42,6 +41,7 @@ export default {
 		future_bets.run();
 		summary.run();
 		running_sum.run();
+		last_update.run();
 	},
 	setInputsByStrategy() {
 		if(appsmith.store.strategy === 1) {
