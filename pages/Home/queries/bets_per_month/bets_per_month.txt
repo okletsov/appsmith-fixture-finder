@@ -1,0 +1,11 @@
+select
+	t1.year_month 
+	, count(t1.id) as bets
+from
+	(SELECT 
+		DATE_FORMAT(e.date_scheduled, '%Y-%m') as 'year_month'
+		, e.id
+	FROM event e
+) t1
+group by t1.year_month
+order by t1.year_month asc;
