@@ -42,6 +42,7 @@ export default {
 		summary.run();
 		running_sum.run();
 		last_update.run();
+		strategy_bets.run();
 	},
 	setInputsByStrategy() {
 		if(appsmith.store.strategy === 1) {
