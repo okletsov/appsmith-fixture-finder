@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 77,
+  "bottomRow": 80,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -51,7 +51,7 @@
   "text": "Last update: {{utils.formatDateTimeWithYear(last_update.data[0].date_updated)}}",
   "textAlign": "RIGHT",
   "textColor": "#f4f4f5",
-  "topRow": 73,
+  "topRow": 76,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
