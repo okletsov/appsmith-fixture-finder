@@ -49,7 +49,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 35,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nstoreValue('strategy', Select_strategy.selectedOptionValue);\nutils.clearInputs();\nutils.setInputsByStrategy();\nfuture_bets.run();\nsummary.run();\nrunning_sum.run();}}",
+  "onOptionChange": "{{\nstoreValue('strategy', Select_strategy.selectedOptionValue);\nutils.clearInputs();\nutils.setInputsByStrategy();\nutils.runAllQueries();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 6.84375,
