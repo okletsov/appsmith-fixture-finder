@@ -2,7 +2,7 @@
   "animateLoading": true,
   "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 35,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -52,7 +52,7 @@
   "text": "No bets found",
   "textAlign": "CENTER",
   "textColor": "#f4f4f5",
-  "topRow": 30,
+  "topRow": 31,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

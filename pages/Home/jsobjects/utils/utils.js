@@ -23,10 +23,14 @@ export default {
 		storeValue('expectedOutcome', 'home');
 	},
 	clearInputs() {
-		Input_home_clicks_count.setValue("");
-		Input_home_clicks_pct.setValue("");
-		Input_dropping_odds_count.setValue("");
-		Input_dropping_odds_pct.setValue("");
+		Input_home_clicks_count_above.setValue("");
+		Input_home_clicks_count_below.setValue("");
+		Input_home_clicks_pct_above.setValue("");
+		Input_home_clicks_pct_below.setValue("");
+		Input_dropping_odds_count_ab.setValue("");
+		Input_dropping_odds_count_be.setValue("");
+		Input_dropping_odds_pct_above.setValue("");
+		Input_dropping_odds_pct_below.setValue("");
 		Input_home_league_pos.setValue("");
 		Input_home_league_pos_pct.setValue("");
 		Input_away_league_pos.setValue("");
@@ -58,8 +62,8 @@ export default {
 		} else if (appsmith.store.strategy === 3) {
 			Select_outcome.setSelectedOption('home');
 			storeValue('expectedOutcome', 'home');
-			Input_home_clicks_count.setValue(30);
-			Input_home_clicks_pct.setValue(80);
+			Input_home_clicks_count_above.setValue(30);
+			Input_home_clicks_pct_above.setValue(80);
 		}
 	},
 	getTitleForBetsModal() {

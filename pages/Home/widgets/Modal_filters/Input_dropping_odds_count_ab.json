@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19,
+  "bottomRow": 39,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -38,7 +38,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "mpzdgi89nx",
-  "label": "Dropping odds count",
+  "label": "Dropping odds count above",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
@@ -57,7 +57,9 @@
   "mobileTopRow": 14,
   "needsErrorInfo": false,
   "onSubmit": "{{utils.runAllQueries();}}",
-  "onTextChanged": "{{summary.run();\nrunning_sum.run()}}",
+  "onTextChanged": "{{utils.runAllQueries();}}",
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
   "parentColumnSpace": 15.21875,
   "parentId": "9ic2pksc53",
   "parentRowSpace": 10,
@@ -68,9 +70,9 @@
   "rightColumn": 29,
   "shouldAllowAutofill": false,
   "showStepArrows": true,
-  "topRow": 12,
+  "topRow": 32,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "qeat30fzr7",
-  "widgetName": "Input_dropping_odds_count"
+  "widgetName": "Input_dropping_odds_count_ab"
 }

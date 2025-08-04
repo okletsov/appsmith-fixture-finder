@@ -3,10 +3,14 @@
 	from event e 
 	where 1=1
 		and e.`result` in ('home', 'draw', 'away')
-		and ({{Input_home_clicks_count.text === null}} OR e.home_clicks_count >= '{{Input_home_clicks_count.text}}')
-		and ({{Input_home_clicks_pct.text === null}} OR e.home_clicks_pct >= '{{Input_home_clicks_pct.text}}')
-		and ({{Input_dropping_odds_count.text === null}} OR e.dropping_odds_count >= '{{Input_dropping_odds_count.text}}')
-		and ({{Input_dropping_odds_pct.text === null}} OR e.dropping_odds_pct >= '{{Input_dropping_odds_pct.text}}')
+	 	and ({{Input_home_clicks_count_above.text === null}} OR e.home_clicks_count >= '{{Input_home_clicks_count_above.text}}')
+	 	and ({{Input_home_clicks_count_below.text === null}} OR e.home_clicks_count < '{{Input_home_clicks_count_below.text}}')
+		and ({{Input_home_clicks_pct_above.text === null}} OR e.home_clicks_pct >= '{{Input_home_clicks_pct_above.text}}')
+	 	and ({{Input_home_clicks_pct_below.text === null}} OR e.home_clicks_pct < '{{Input_home_clicks_pct_below.text}}')
+		and ({{Input_dropping_odds_count_ab.text === null}} OR e.dropping_odds_count >= '{{Input_dropping_odds_count_ab.text}}')
+	 	and ({{Input_dropping_odds_count_be.text === null}} OR e.dropping_odds_count < '{{Input_dropping_odds_count_be.text}}')
+		and ({{Input_dropping_odds_pct_above.text === null}} OR e.dropping_odds_pct >= '{{Input_dropping_odds_pct_above.text}}')
+	 	and ({{Input_dropping_odds_pct_below.text === null}} OR e.dropping_odds_pct < '{{Input_dropping_odds_pct_below.text}}')
 		and ({{Input_home_league_pos.text === null}} OR e.home_league_pos <= '{{Input_home_league_pos.text}}')
 		and ({{Input_home_league_pos_pct.text === null}} OR e.home_league_pos_pct <= '{{Input_home_league_pos_pct.text}}')
 		and ({{Input_away_league_pos.text === null}} OR e.away_league_pos >= '{{Input_away_league_pos.text}}')
