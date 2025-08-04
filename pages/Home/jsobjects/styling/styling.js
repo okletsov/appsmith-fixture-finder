@@ -5,11 +5,13 @@ export default {
 	getAfColor(awayForm) {
 		if(appsmith.store.strategy === 1 && awayForm >= 300) { return this.primaryColor;	}
 		else if(appsmith.store.strategy === 2 && awayForm <= 199) { return this.primaryColor;	}
+		else if(appsmith.store.strategy === 4 && awayForm >= 300) { return this.primaryColor;	}
 		else { return this.secondaryColor; }
 	},
 	
 	getHfColor(homeForm) {
 		if(appsmith.store.strategy === 2 && homeForm >= 300) { return this.primaryColor;	} 
+		else if(appsmith.store.strategy === 4 && homeForm < 400) { return this.primaryColor;	}
 		else { return this.secondaryColor; }
 	},
 	

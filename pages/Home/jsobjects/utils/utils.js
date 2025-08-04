@@ -64,6 +64,11 @@ export default {
 			storeValue('expectedOutcome', 'home');
 			Input_home_clicks_count_above.setValue(30);
 			Input_home_clicks_pct_above.setValue(80);
+		} else if (appsmith.store.strategy === 4) {
+			Select_outcome.setSelectedOption('draw');
+			storeValue('expectedOutcome', 'draw');
+			Input_home_form_below.setValue(400);
+			Input_away_form_above.setValue(300);
 		}
 	},
 	getTitleForBetsModal() {
