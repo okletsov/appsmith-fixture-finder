@@ -1,5 +1,14 @@
 	SELECT 
-		*
+		* ,
+	concat(
+		(case when e.away_form >= 300 then 'S1' else '' end),
+		' ',
+		(case when e.home_form >= 300 and e.away_form <= 199 then 'S2' else '' end),
+		' ',
+		(case when e.home_clicks_count >= 30 and home_clicks_pct >= 80 then 'S3' else '' end),
+		' ',
+		(case when e.home_form < 400 and e.away_form >= 300 then 'S4' else '' end)
+	) as strategy
 	from event e 
 	where 1=1
 		and e.`result` in ('home', 'draw', 'away')
