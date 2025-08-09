@@ -56,7 +56,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onSubmit": "{{utils.runAllQueries();}}",
+  "onSubmit": "",
   "onTextChanged": "{{utils.runAllQueries();}}",
   "originalBottomRow": 39,
   "originalTopRow": 32,
