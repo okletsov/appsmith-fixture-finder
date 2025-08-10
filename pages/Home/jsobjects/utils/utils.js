@@ -5,7 +5,7 @@ export default {
 		} else { 
 		return passedArray.map(e => `'${e}'`).join();	
 		}
-	} ,
+	},
 	commaSeparateIn(passedArray) {
     if(passedArray.length === 0) {
 			return `''`;
