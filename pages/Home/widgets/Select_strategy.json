@@ -60,7 +60,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 30,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Strategy 1\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"Strategy 2\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"Strategy 3\",\n    \"code\": 3\n  },\n\t{\n    \"name\": \"Strategy 4\",\n    \"code\": 4\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Strategy 1\",\n    \"code\": 1\n  },\n  {\n    \"name\": \"Strategy 2\",\n    \"code\": 2\n  },\n  {\n    \"name\": \"Strategy 3\",\n    \"code\": 3\n  },\n\t{\n    \"name\": \"Strategy 4\",\n    \"code\": 4\n  },\n\t{\n    \"name\": \"Strategy 5\",\n    \"code\": 5\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

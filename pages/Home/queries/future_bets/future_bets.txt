@@ -4,7 +4,8 @@ select
 						 CASE WHEN e.away_form >= 300 THEN 'S1' END,
 						 CASE WHEN e.home_form >= 300 AND e.away_form <= 199 THEN 'S2' END,
 						 CASE WHEN e.home_clicks_count >= 30 AND e.home_clicks_pct >= 80 THEN 'S3' END,
-						 CASE WHEN e.home_form < 400 AND e.away_form >= 300 THEN 'S4' END
+						 CASE WHEN e.home_form < 400 AND e.away_form >= 300 THEN 'S4' END,
+						 CASE WHEN e.home_form >= 210 AND e.away_form < 100 THEN 'S5' END
 						)
 	) AS strategy
 from event e 

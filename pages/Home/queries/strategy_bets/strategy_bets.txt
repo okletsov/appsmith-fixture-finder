@@ -5,6 +5,7 @@ select
 			when e.home_form >= 300 and e.away_form <= 199 then 1 
 			when e.home_clicks_count >= 30 and home_clicks_pct >= 80 then 1 
 			when e.home_form < 400 and e.away_form >= 300 then 1
+			when e.home_form >= 210 and e.away_form < 100 then 1
 		else 0 end
 	) as strategy_bets
 from event e 
