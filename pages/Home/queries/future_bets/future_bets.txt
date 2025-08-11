@@ -1,14 +1,12 @@
 select 
 	* ,
-	NULLIF(
-					TRIM(CONCAT_WS(' ',
-							CASE WHEN e.away_form >= 300 THEN 'S1' END,
-							CASE WHEN e.home_form >= 300 AND e.away_form <= 199 THEN 'S2' END,
-							CASE WHEN e.home_clicks_count >= 30 AND e.home_clicks_pct >= 80 THEN 'S3' END,
-							CASE WHEN e.home_form < 400 AND e.away_form >= 300 THEN 'S4' END
-					)),
-					''
-			) AS strategy
+	TRIM(CONCAT_WS(' ',
+						 CASE WHEN e.away_form >= 300 THEN 'S1' END,
+						 CASE WHEN e.home_form >= 300 AND e.away_form <= 199 THEN 'S2' END,
+						 CASE WHEN e.home_clicks_count >= 30 AND e.home_clicks_pct >= 80 THEN 'S3' END,
+						 CASE WHEN e.home_form < 400 AND e.away_form >= 300 THEN 'S4' END
+						)
+	) AS strategy
 from event e 
 where e.date_scheduled > now()
 	 	and ({{Input_home_clicks_count_above.text === null}} OR e.home_clicks_count >= '{{Input_home_clicks_count_above.text}}')
