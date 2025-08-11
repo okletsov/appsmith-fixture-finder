@@ -40,11 +40,11 @@ export default {
     const results = strategies.map(strategy => {
         const expected = strategyOutcomes[strategy];
         return expected === actualOutcome
-            ? `✅${strategy}`
-            : `❌${strategy}`;
+            ? `✅ ${strategy}`
+            : `❌ ${strategy}`;
     });
 
     // Join results back into a single string
-    return results.join(" ");
+    return results.join("  ");
 	}
 }

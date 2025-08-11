@@ -49,7 +49,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "{{utils.formatDateTimeWithYear(currentItem.date_scheduled)}}\n\n<span style=\"color:{{appsmith.store.expectedOutcome === 'home' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_home}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'draw' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_draw}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'away' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_away}}</span>\n\n{{currentItem.main_score === null ? currentItem.strategy : currentItem.main_score + ' ' + currentItem.detailed_score}}\n\n{{currentItem.main_score === null ? '' : styling.evaluateStrategies(currentItem.strategy, currentItem.result)}}",
+  "text": "{{utils.formatDateTimeWithYear(currentItem.date_scheduled)}}\n\n<span style=\"color:{{appsmith.store.expectedOutcome === 'home' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_home}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'draw' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_draw}}</span>  |  <span style=\"color:{{appsmith.store.expectedOutcome === 'away' ? '#f4f4f5' : '#71717a'}};\">{{currentItem.odds_away}}</span>\n\n{{currentItem.main_score === null ? currentItem.strategy : currentItem.main_score + ' ' + currentItem.detailed_score}}\n\n<span style=\"font-size:10px;\">{{currentItem.main_score === null ? '' : styling.evaluateStrategies(currentItem.strategy, currentItem.result)}}</span>",
   "textAlign": "CENTER",
   "textColor": "#f4f4f5",
   "topRow": 7,
