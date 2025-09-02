@@ -60,7 +60,7 @@
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Future - {{future_bets.data.length}} {{Select_strategy.selectedOptionValue === \"\" ? ' (' + strategy_bets.data[0].strategy_bets + ')' : \"\"}}",
+      "label": "Future - {{future_bets.data.length}} {{Select_strategy.selectedOptionValue === \"\" && strategy_bets.data[0].strategy_bets != null ? ' (' + strategy_bets.data[0].strategy_bets + ')' : \"\"}}",
       "menuItems": {},
       "onClick": "{{storeValue('parentButton', 'future_bets');\nfuture_bets.run();\nshowModal(Modal_bets.name);}}",
       "placement": "CENTER",
