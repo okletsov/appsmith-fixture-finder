@@ -1,12 +1,16 @@
 {
-  "gitSyncId": "6866ba002612f654e81bea96_afaf41ee-7deb-4eaf-9fd8-7789f8729a88",
-  "id": "Home_utils.setInputsByStrategy",
+  "gitSyncId": "6866ba002612f654e81bea96_393cc0b4-fba2-4f9e-bc49-8a85faffeb6d",
+  "id": "Home_utils.timeSince",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [],
+      "jsArguments": [
+        {
+          "name": "dateTime"
+        }
+      ],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -22,8 +26,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "utils.setInputsByStrategy",
-    "name": "setInputsByStrategy",
+    "fullyQualifiedName": "utils.timeSince",
+    "name": "timeSince",
     "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -21,6 +21,7 @@ export default {
 	setDefaultOutcome() {
 		Select_outcome.setSelectedOption("home");
 		storeValue('expectedOutcome', 'home');
+		storeValue('timeStamp', new Date());
 	},
 	clearInputs() {
 		Input_home_clicks_count_above.setValue("");
@@ -103,5 +104,17 @@ export default {
       const formattedDateTime = date.toLocaleString('en-US', options).replace(',', ',');
       
       return formattedDateTime;	
+	},
+	timeSince(dateTime) {
+		if(dateTime === null) {return null;}
+		
+		const past = new Date(dateTime);
+		const diffMs = appsmith.store.timeStamp - past; // difference in milliseconds
+
+		const diffMinutes = Math.floor(diffMs / 60000);
+		const hours = Math.floor(diffMinutes / 60);
+		const minutes = diffMinutes % 60;
+
+		return `${hours}h ${minutes}m`;
 	}
 }
