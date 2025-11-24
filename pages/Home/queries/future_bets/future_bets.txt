@@ -10,6 +10,7 @@ select
 	) AS strategy
 from event e 
 where e.date_scheduled > now()
+		and e.strategy_id not in (1, 2)
 	 	and ({{Input_home_clicks_count_above.text === null}} OR e.home_clicks_count >= '{{Input_home_clicks_count_above.text}}')
 	 	and ({{Input_home_clicks_count_below.text === null}} OR e.home_clicks_count < '{{Input_home_clicks_count_below.text}}')
 		and ({{Input_home_clicks_pct_above.text === null}} OR e.home_clicks_pct >= '{{Input_home_clicks_pct_above.text}}')
