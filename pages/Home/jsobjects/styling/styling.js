@@ -7,6 +7,7 @@ export default {
 		else if(appsmith.store.strategy === 2 && awayForm <= 199) { return this.primaryColor;	}
 		else if(appsmith.store.strategy === 4 && awayForm >= 300) { return this.primaryColor;	}
 		else if(appsmith.store.strategy === 5 && awayForm <= 100) { return this.primaryColor;	}
+		else if(appsmith.store.strategy === 6 && awayForm >= 300) { return this.primaryColor;	}
 		else { return this.secondaryColor; }
 	},
 	
@@ -14,11 +15,17 @@ export default {
 		if(appsmith.store.strategy === 2 && homeForm >= 300) { return this.primaryColor;	} 
 		else if(appsmith.store.strategy === 4 && homeForm < 400) { return this.primaryColor;	}
 		else if(appsmith.store.strategy === 5 && homeForm >= 210) { return this.primaryColor;	}
+		else if(appsmith.store.strategy === 6 && homeForm < 300) { return this.primaryColor;	}
 		else { return this.secondaryColor; }
 	},
 	
 	getHccColor(homeClicksCount, homeClicksPct) {
 		if(appsmith.store.strategy === 3 && homeClicksCount >= 30 && homeClicksPct >= 80) { return this.primaryColor;	} 
+		else { return this.secondaryColor; }
+	},
+	
+	getDoPctColor(droppingOddsPct) {
+		if(appsmith.store.strategy === 6 && droppingOddsPct < 50) { return this.primaryColor;	} 
 		else { return this.secondaryColor; }
 	},
 	evaluateStrategies(strategiesString, actualOutcome) {
@@ -33,7 +40,8 @@ export default {
         S2: 'home',
         S3: 'home',
         S4: 'draw',
-				S5: 'home'
+				S5: 'home',
+				S6: 'away'
     };
 
     // Split the string into an array of strategy names
