@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6866ba002612f654e81bea96_60eed2fe-7047-4ae3-8e02-d25a2be66357",
-  "id": "Home_utils.setDefaultOutcome",
+  "gitSyncId": "6866ba002612f654e81bea96_31595f0f-b27b-4095-9447-80b5a28861c8",
+  "id": "Home_utils.applyDefaultStrategy",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "utils.setDefaultOutcome",
-    "name": "setDefaultOutcome",
+    "fullyQualifiedName": "utils.applyDefaultStrategy",
+    "name": "applyDefaultStrategy",
     "pageId": "Home",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true

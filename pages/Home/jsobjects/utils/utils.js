@@ -23,6 +23,13 @@ export default {
 		storeValue('expectedOutcome', 'home');
 		storeValue('timeStamp', new Date());
 	},
+	async applyDefaultStrategy() {
+		await storeValue('timeStamp', new Date());
+		await Select_strategy.setSelectedOption(6);
+		storeValue('strategy', Select_strategy.selectedOptionValue);
+		this.setInputsByStrategy();
+		this.runAllQueries();
+	},
 	clearInputs() {
 		Input_home_clicks_count_above.setValue("");
 		Input_home_clicks_count_below.setValue("");
